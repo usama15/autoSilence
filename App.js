@@ -4,14 +4,12 @@ import theme from './lib/theme/Customizetheme';
 import {SafeAreaView} from 'react-native';
 import Splash from './lib/screens/Splash';
 
-const App = () => {
-  return (
-    <NativeBaseProvider theme={theme}>
-      <SafeAreaView>
-        <Splash/>
-      </SafeAreaView>
-    </NativeBaseProvider>
-  );
-};
+const App = () => (
+  <NativeBaseProvider theme={theme}>
+    <SafeAreaView>
+      <Splash />
+    </SafeAreaView>
+  </NativeBaseProvider>
+);
 
 export default App;
